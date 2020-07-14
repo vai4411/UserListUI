@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: lightgrey;
+}
+
+.userList {
+    margin-top: 25px;
+    margin-left: 15%;
+    height: 90%;
+    background: white;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.division1 {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: #181818;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
