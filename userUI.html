@@ -1,39 +1,56 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="userList">
         <div class="division1">
             <p><b>
-	<label>Cuddle</label></b>
-                <label>ADMIN</label>
+	<label id="label1">Cuddle</label></b>
+                <label id="label2">ADMIN</label>
             </p>
-            <ul>
-                <li>Transcations</li>
-                <li>System Settings</li>
-                <li>Suggested Questions</li>
-                <li>Autorization
-                    <div>
-                        <a>Users</a>
-                        <a>Groups</a>
-                        <a>Permission</a>
+            <ul class="list">
+                <li><i class="fa fa-server"></i>&nbsp;&nbsp;&nbsp;Transcations</li>
+                <li><i class="fa fa-gear"></i>&nbsp;&nbsp;&nbsp;System Settings</li>
+                <li><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;Suggested Questions</li>
+                <li><i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;Autorization
+                    <div id="Demo1" class="my-hide">
+                        <a class="my-button my-block my-left-align">Users</a>
+                        <a class="my-button my-block my-left-align">Groups</a>
+                        <a class="my-button my-block my-left-align">Permission</a>
                     </div>
                 </li>
-                <label>User@1234></label>
+                <label id="label3"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    User@1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></label>
             </ul>
         </div>
-        <div>
-            <input type="text" placeholder="What do you want to ask?"></input>
-            <input type="button" value="Ask"></input>
+        <div class="division2">
+            <input type="text" id="input1" placeholder="What do you want to ask?"></input>
+            <input type="button" id="button" value="Ask"></input>
         </div>
         <hr>
         <div class="division3" id="users">
             <label id="label1"><b>Users(20)</label>
-            <input type="button" value="+ADD NEW"></input><br>
-            <input type="text" placeholder="Search UserName, Email, Status"></input>
+            <input type="button" id="button1" value="+ADD NEW"></input><br>
+            <input type="text" id="input2" placeholder="Search UserName, Email, Status"></input>
+            <i id="icon" class="fa fa-search" aria-hidden="true"></i>
+            <table class="table" id="data">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Role</th>
+                    <th>Last Login</th>
+                    <th>Permission</th>
+                    <th></th>
+                </tr>
+            </table>
         </div>
+    </div>
 </body>
 
 </html>
