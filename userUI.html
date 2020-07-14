@@ -6,7 +6,7 @@
     <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="getUser();loadMain()">
     <div class="userList">
         <div class="division1">
             <p><b>
@@ -17,9 +17,9 @@
                 <li><i class="fa fa-server"></i>&nbsp;&nbsp;&nbsp;Transcations</li>
                 <li><i class="fa fa-gear"></i>&nbsp;&nbsp;&nbsp;System Settings</li>
                 <li><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;Suggested Questions</li>
-                <li><i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;Autorization
+                <li onclick="myFunction('Demo1')"><i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;Autorization
                     <div id="Demo1" class="my-hide">
-                        <a class="my-button my-block my-left-align">Users</a>
+                        <a onclick="loadUsers();" class="my-button my-block my-left-align">Users</a>
                         <a class="my-button my-block my-left-align">Groups</a>
                         <a class="my-button my-block my-left-align">Permission</a>
                     </div>
@@ -37,7 +37,7 @@
             <label id="label1"><b>Users(20)</label>
             <input type="button" id="button1" value="+ADD NEW"></input><br>
             <input type="text" id="input2" placeholder="Search UserName, Email, Status"></input>
-            <i id="icon" class="fa fa-search" aria-hidden="true"></i>
+            <i onclick="search();" id="icon" class="fa fa-search" aria-hidden="true"></i>
             <table class="table" id="data">
                 <tr>
                     <th>Name</th>
