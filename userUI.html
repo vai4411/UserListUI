@@ -8,12 +8,12 @@
 
 <body onload="getUser();loadMain()">
     <div class="userList">
-        <div class="division1">
+        <div class="column1">
             <p><b>
-	<label id="label1">Cuddle</label></b>
+	            <label id="label1">Cuddle</label></b>
                 <label id="label2">ADMIN</label>
             </p>
-            <ul class="list">
+            <ul class="list" style="height: 80%;">
                 <li><i class="fa fa-server"></i>&nbsp;&nbsp;&nbsp;Transcations</li>
                 <li><i class="fa fa-gear"></i>&nbsp;&nbsp;&nbsp;System Settings</li>
                 <li><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;Suggested Questions</li>
@@ -24,31 +24,33 @@
                         <a class="my-button my-block my-left-align">Permission</a>
                     </div>
                 </li>
-                <label id="label3"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    User@1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></label>
+            </ul>
+            <ul class="list">
+                <li id="label3"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;User@123</li>
             </ul>
         </div>
-        <div class="division2">
-            <input type="text" id="input1" placeholder="What do you want to ask?"></input>
-            <input type="button" id="button" value="Ask"></input>
-        </div>
-        <hr>
-        <div class="division3" id="users">
-            <label id="label1"><b>Users(20)</label>
-            <input type="button" id="button1" value="+ADD NEW"></input><br>
-            <input type="text" id="input2" placeholder="Search UserName, Email, Status"></input>
-            <i onclick="search();" id="icon" class="fa fa-search" aria-hidden="true"></i>
-            <table class="table" id="data">
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Status</th>
-                    <th>Role</th>
-                    <th>Last Login</th>
-                    <th>Permission</th>
-                    <th></th>
-                </tr>
-            </table>
+        <div class="column2">
+            <div class="division2">
+                <input type="text" id="input1" placeholder="What do you want to ask?"></input>
+                <input type="button" id="button" value="Ask"></input>
+            </div>
+            <div class="division4" id="users">
+                <label><b>Users(20)</label>
+                <input type="button" id="button1" value="+ADD NEW"></input><br>
+                <input type="text" id="input2" placeholder="Search UserName, Email, Status"></input>
+                <i id="icon" class="fa fa-search" aria-hidden="true"></i>
+                <table class="table" id="data">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Role</th>
+                        <th>Last Login</th>
+                        <th>Permission</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </body>

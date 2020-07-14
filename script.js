@@ -75,8 +75,8 @@ function getUser() {
     var content = "";
     var x;
     for (x = 0; x < users.length; x++) {
-        table += "<tr>";
-        table += "<td><i class='fa fa-user-circle' style='font-size: 14px;color:grey;'> </i>&nbsp;&nbsp;&nbsp;" + users[x].name + "</td > ";
+        table += "<tr class='table1' style='outline: thin solid lightgrey;' > ";
+        table += "<td style='color:#6628F5'><i class='fa fa-user-circle' style='font-size: 14px;color:grey;'> </i>&nbsp;&nbsp;&nbsp;" + users[x].name + "</td > ";
         table += "<td>" + users[x].email + "</td>";
         if (users[x].status == "active")
             table += "<td><div id='x" + x + "'class='status1' onclick='changeStatus(this);' > " + users[x].status + "</div></td > ";
@@ -92,10 +92,10 @@ function getUser() {
 }
 
 function loadMain() {
-    var a = document.getElementById("users");
+    // var a = document.getElementById("users");
     var d = document.getElementById("main");
-    a.style.display = "none";
-    d.style.display = "block";
+    // a.style.display = "none";
+    // d.style.display = "block";
 }
 
 function myFunction(id) {
@@ -117,7 +117,7 @@ function changeStatus(id) {
 
 function loadUsers() {
     var a = document.getElementById("users");
-    var d = document.getElementById("main");
+    // var d = document.getElementById("main");
     a.style.display = "block";
-    d.style.display = "none";
+    // d.style.display = "none";
 }
