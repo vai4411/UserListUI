@@ -2,45 +2,65 @@ body {
     padding: 0;
     margin: 0;
     background: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .userList {
     margin-top: 25px;
     margin-left: 15%;
-    height: 90%;
+    margin-right: 15%;
     background: white;
     border-radius: 10px;
-    width: 70%;
+    flex-basis: 60%;
+    margin: auto;
+    box-shadow: 20px 20px 50px grey;
 }
 
-.division1 {
+.column1 {
     width: 20%;
-    height: 100%;
+    height: 550px;
     float: left;
     background: #181818;
     color: white;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    margin: auto;
+}
+
+.column2 {
+    width: 80%;
+    height: 550px;
+    float: left;
+    background: white;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-direction: column;
+    margin: auto;
 }
 
 .division2 {
-    width: 80%;
-    float: right;
-    height: 8%;
-    border-top-right-radius: 20px;
+    width: fill-parent;
+    padding: 10px;
+    height: 6%;
+    border-top-right-radius: 10px;
+    box-shadow: 20px 20px 50px lightgrey;
 }
 
-.division3 {
-    padding: 5px;
-    margin-right: 17px;
-    width: 76%;
-    height: 87%;
-    float: right;
+.division4 {
+    background-color: white;
+    margin-top: 15px;
+    margin-right: 15px;
+    max-height: fill-parent;
     border: 1px solid lightgrey;
+    margin-left: 10px;
+    overflow: wrap;
+    height: fill-parent;
+    word-wrap: break-word;
 }
 
 ul {
-    list-style-type: none;
     margin-left: -30px;
 }
 
@@ -52,18 +72,22 @@ label#label1 {
 
 label#label2 {
     font-size: 10;
+    margin-top: -10px;
     background: #6628F5;
     color: white;
-    padding: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    font-family: sans-serif;
     border-radius: 2px;
 }
 
 label#label3 {
     position: absolute;
-    bottom: 6%;
-    margin-left: -4px;
+    bottom: 7%;
     background-color: #202020;
-    padding: 10px;
+    padding: 8px;
     width: 160px;
 }
 
@@ -78,7 +102,7 @@ li {
 }
 
 .list {
-    font-size: 16;
+    font-size: 14;
     color: darkgrey;
 }
 
@@ -88,6 +112,10 @@ input#input1 {
     width: 95%;
     height: 30;
     border: 1px solid lightgrey;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 input#input2 {
@@ -100,9 +128,10 @@ input#input2 {
 
 input#button {
     margin-left: -65px;
-    padding: 3px;
+    padding: 5px;
     width: 55px;
     border: none;
+    font-size: 11;
 }
 
 input#button1 {
@@ -123,8 +152,11 @@ i#icon {
 
 table {
     font-family: verdana, arial, sans-serif;
-    font-size: 11px;
-    width: 100%;
+    font-size: 10;
+    width: 97.5%;
+    height: fill-parent;
+    word-wrap: break-word;
+    margin-left: 10px;
 }
 
 .status1 {
@@ -134,7 +166,7 @@ table {
     height: 15px;
     border: none;
     border: solid 2px lightseagreen;
-    border-radius: 5px;
+    border-radius: 4px;
     background: rgba(255, 255, 255, 0);
     font-size: 10px;
 }
@@ -151,10 +183,9 @@ table {
     font-size: 10px;
 }
 
-th,
-td {
-    border-bottom: 1px solid #ddd;
-    padding: 8px;
+td,
+th {
+    padding: 4px;
     text-align: left;
 }
 
