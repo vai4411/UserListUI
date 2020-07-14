@@ -14,7 +14,7 @@
                 <label id="label2">ADMIN</label>
             </p>
             <ul class="list" style="height: 80%;">
-                <li><i class="fa fa-server"></i>&nbsp;&nbsp;&nbsp;Transcations</li>
+                <li id="server"><i class="fa fa-server"></i>&nbsp;&nbsp;&nbsp;Transcations</li>
                 <li><i class="fa fa-gear"></i>&nbsp;&nbsp;&nbsp;System Settings</li>
                 <li><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;Suggested Questions</li>
                 <li onclick="myFunction('Demo1')"><i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;Autorization
@@ -26,18 +26,21 @@
                 </li>
             </ul>
             <ul class="list">
-                <li id="label3"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;User@123</li>
+                <li id="label3">
+                    <img id='image' src="fire.jpg" alt="userImage">
+                    <b>&nbsp;&nbsp;&nbsp;Rayn Larson&nbsp;&nbsp;&nbsp;></li>
             </ul>
         </div>
         <div class="column2">
             <div class="division2">
-                <input type="text" id="input1" placeholder="What do you want to ask?"></input>
-                <input type="button" id="button" value="Ask"></input>
+                <input type="text" id="input1" placeholder="What do you want to ask?" maxlength="78"></input>
+                <p style="color: lightgrey;margin-top: -23px; margin-left: 84%;"><i class="fa fa-question-circle"></i></p>
+                <input type="button" id="button" value="Ask" style="margin-top: -35px; margin-left: 89%;"></input>
             </div>
             <div class="division4" id="users">
-                <label><b>Users(20)</label>
-                <input type="button" id="button1" value="+ADD NEW"></input><br>
-                <input type="text" id="input2" placeholder="Search UserName, Email, Status"></input>
+                <p id="label4"><b>Users(20)</p>
+                <input type="button" id="button1" value="+ADD NEW"></input>
+                <input type="text" id="input2" placeholder="Search UserName, Email, Status" maxlength="30"></input>
                 <i id="icon" class="fa fa-search" aria-hidden="true"></i>
                 <table class="table" id="data">
                     <tr>
