@@ -107,9 +107,7 @@ function getUser() {
 
 function loadMain() {
     var a = document.getElementById("users");
-    var d = document.getElementById("main");
     a.style.display = "none";
-    d.style.display = "block";
 }
 
 function myFunction(id) {
@@ -131,7 +129,5 @@ function changeStatus(id) {
 
 function loadUsers() {
     var a = document.getElementById("users");
-    var d = document.getElementById("main");
     a.style.display = "block";
-    d.style.display = "none";
 }
