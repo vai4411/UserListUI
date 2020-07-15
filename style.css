@@ -1,36 +1,26 @@
     body {
         padding: 0;
         margin: 0;
-        background: lightgrey;
         display: flex;
         flex-wrap: wrap;
     }
     
     .userList {
-        margin-top: 25px;
-        margin-left: 15%;
-        margin-right: 15%;
         background: white;
-        border-radius: 10px;
-        flex-basis: 60%;
-        margin: auto;
-        box-shadow: 20px 20px 50px grey;
+        flex-basis: 100%;
     }
     
     .column1 {
         width: 20%;
-        height: 550px;
+        height: 100%;
         float: left;
         background: #181818;
         color: white;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-        margin: auto;
     }
     
     .column2 {
         width: 80%;
-        height: 550px;
+        height: 100%;
         float: left;
         background: white;
         color: white;
@@ -41,10 +31,8 @@
     }
     
     .division2 {
-        width: fill-parent;
+        height: 40px;
         padding: 10px;
-        height: 6%;
-        border-top-right-radius: 10px;
         box-shadow: 20px 20px 50px lightgrey;
     }
     
@@ -54,6 +42,7 @@
         height: 7%;
         background: #202020;
         color: white;
+        border-bottom-left-radius: 10px;
     }
     
     .division4 {
@@ -76,8 +65,8 @@
     }
     
     label#label1 {
-        margin-left: 10px;
-        font-size: 18;
+        margin-left: 5%;
+        font-size: 114%;
         font-family: sans-serif;
     }
     
@@ -124,7 +113,8 @@
         margin-top: 3px;
         padding-top: 7%;
         padding-bottom: 7%;
-        margin-left: -28%;
+        margin-left: -15%;
+        font-size: 118%;
     }
     
     i {
@@ -176,12 +166,9 @@
     }
     
     input#input1 {
-        margin-top: 5px;
-        width: 98%;
-        height: 30;
+        width: 99%;
+        height: 37px;
         border: 1px solid lightgrey;
-        padding: 0 10px;
-        font-size: 12;
     }
     
     input#input2 {
@@ -194,12 +181,12 @@
     }
     
     input#button {
-        padding: 5px;
-        flex-basis: 55px;
+        padding: 6px;
         border: none;
-        font-size: 70%;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -38px;
+        margin-left: 93%;
     }
     
     input#button1 {
@@ -259,6 +246,11 @@
         font-family: sans-serif;
         padding: 4px;
         text-align: left;
+    }
+    
+    input#option {
+        border: none;
+        background-color: white;
     }
     
     .my-show-block,

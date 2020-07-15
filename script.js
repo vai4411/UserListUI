@@ -99,7 +99,7 @@ function getUser() {
         table += "<td>" + users[x].role + "</td>";
         table += "<td>" + users[x].lastLogin + "</td>";
         table += "<td><b>" + users[x].permission + "</td>";
-        table += "<td>...</td>";
+        table += "<td><input type='button' id='option' value='...'></input></td > ";
         table += "</tr>";
     }
     document.getElementById("data").innerHTML += table;
