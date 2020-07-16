@@ -323,3 +323,45 @@ i#userIcon {
         width: 30%;
     }
 }
+
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .column1 {
+        width: 100%;
+        height: 100vh;
+    }
+    .column2 {
+        width: 100vw;
+        overflow-x: scroll;
+    }
+    .list {
+        padding: 0px;
+    }
+    .userList {
+        flex-direction: column;
+    }
+    table {
+        font-size: 16;
+    }
+    input#button {
+        top: 101vh;
+    }
+    p#questions {
+        height: 100px;
+        display: none;
+    }
+    input#button1 {
+        width: 70px;
+        right: 10%;
+        margin-top: -10%;
+        position: absolute;
+    }
+    input#input2 {
+        font-size: 17%;
+    }
+    i#userIcon {
+        display: none;
+    }
+}
