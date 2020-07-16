@@ -333,6 +333,7 @@ i#userIcon {
         height: 100vh;
     }
     .column2 {
+        height: 100vh;
         width: 100vw;
         overflow-x: scroll;
     }
@@ -356,6 +357,9 @@ i#userIcon {
         width: 70px;
         right: 10%;
         margin-top: -10%;
+        position: absolute;
+    }
+    input#input1 {
         position: absolute;
     }
     input#input2 {
