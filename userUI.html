@@ -4,16 +4,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="script.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
-<body onload="getUser();loadMain()">
+<body onload="getUser(),loadMain()">
     <div class="userList">
         <div class="column1">
             <p><b>
 	            <label id="label1">Cuddle</label></b>
                 <label id="label2">ADMIN</label>
             </p>
-            <ul class="list" style="height: 80%;">
+            <ul class="list" style="height: 90%; padding:0px;">
                 <li id="server"><i class="fa fa-server"></i>&nbsp;&nbsp;&nbsp;Transcations</li>
                 <li><i class="fa fa-gear"></i>&nbsp;&nbsp;&nbsp;System Settings</li>
                 <li><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;Suggested Questions</li>
@@ -29,22 +30,22 @@
                 <img id='image' src="fire.jpg" alt="userImage">
                 <p id="userName">Rayn Larson &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
                 </p>
-                <!-- </p> -->
             </div>
 
         </div>
         <div class="column2">
             <div class="division2">
-                <input type="text" id="input1" placeholder="What do you want to ask?" maxlength="78"></input>
-                <p style="color: lightgrey;margin-top: -23px; margin-left: 90%;"><i class="fa fa-question-circle"></i></p>
-                <input type="button" id="button" value="Ask" style="margin-top: -47px; margin-left: 93%; padding-right: 1%;" "></input>
+                <input type="text" id="input1" placeholder="What do you want to ask?" maxlength="155"></input>
+                <p id='questions' style="color: lightgrey; margin-left: 91%; position: absolute; top: 0.2%; right: 6em;"><i class="fa fa-question-circle"></i></p>
+                <input type="button" id="button" value="Ask"></input>
             </div>
-            <div class="division4 " id="users ">
+
+            <div class='division4' id="users ">
                 <p id='label4'><b>Users(20)</p>
-                <input type="button " id='button1' value="+ADD NEW "></input>
-                <input type="text " id='input2' placeholder="Search UserName, Email, Status " maxlength="30 "></input>
-                <i id='icon' class="fa fa-search " aria-hidden="true "></i>
-                <table class="table " id='data'>
+                    <input type="button " id='button1' value="+ADD NEW "></input>
+                <input type="text " id='input2' placeholder="Search UserName, Email, Status " maxlength="75"></input>
+                    <i id='icon' class="fa fa-search" aria-hidden="true"></i>
+                <table class='table' id='data'>
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
